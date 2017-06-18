@@ -149,6 +149,7 @@
                 $allVideos.each(function() {											
                     var $el = $(this);
                     var newWidth = $el.parent($fluidEl).width();
+                    console.log(newWidth);
                     $el
                         .width(newWidth)
                         .height(newWidth * $el.data('aspectRatio'));
